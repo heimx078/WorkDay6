@@ -27,7 +27,23 @@ Public Class Form1
 
         ' Please write your code here...
 
-        txtResult.Text = "Not implemented yet"
+        Dim result As String
+        If (B < C) Or (D < A) Then
+            result = "No intersection"
+        Else
+            Dim begPoint As Double
+            begPoint = Math.Max(A, C)
+
+            Dim endPoint As Double
+            endpoint = Math.Min(B, D)
+
+            result = "the intersection is from " & begPoint & " to " & endPoint
+
+
+        End If
+
+        txtResult.Text = result
+
     End Sub
 
 End Class
